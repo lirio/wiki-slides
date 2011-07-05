@@ -4,8 +4,8 @@
 <div id="slides-refs">
 ${slide.html}
 </div>
-<ul id="slides-nav">
 
+<ul id="slides-nav">
 </ul>
 <div id="scrollable">
   <div id="slides">

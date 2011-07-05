@@ -7,6 +7,7 @@ import org.apache.commons.io.FileUtils
 class Slide(val sourceFile: File) {
   def source: String = FileUtils.readFileToString(sourceFile, "UTF-8")
   def html: String = markeven.toHtml(source)
+  def title: String = sourceFile.getName
 }
 
 object Slide {

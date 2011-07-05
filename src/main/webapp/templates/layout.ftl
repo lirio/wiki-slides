@@ -13,10 +13,16 @@
   </script>
 </head>
 <body>
-<div id="outer">
-  <div id="content">
-  ${content}
-  </div>
+<ul id="main-nav">
+  <li>
+    <a href="/index.html">Workshop</a>
+  </li>
+  <li>
+    <a href="/">Slideshow</a>
+  </li>
+</ul>
+<div id="content">
+${content}
 </div>
 </body>
 </html>
