@@ -1,0 +1,44 @@
+body {
+  background: #aaa;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+}
+
+#outer {
+  width: 640px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  background: #eee;
+  margin: 0 auto;
+  padding: 16px;
+}
+#Cover {
+  background: #666;
+}
+
+#Cover H1 {
+  color:#FFF;
+  text-shadow:0 3px 10px #000;
+}
+
+#Image H2 {
+  text-shadow:0 3px 10px #000;
+  color:#FFF;
+}
+
+h1 {
+  margin:4px 0;
+  font-size:1.5em;
+}
+
+pre {
+  margin:0;
+  border:1px solid #777;
+  padding:8px;
+  background:#fff;
+}
+
+#footer {
+  text-align: center;
+}
