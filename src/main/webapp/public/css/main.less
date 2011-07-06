@@ -83,12 +83,46 @@ body {
       }
     }
   }
+  .active {
+    a{
+      color:#ccc;
+      &:hover{
+        color:#ccc;
+      }
+    }
+  }
 }
 
 h1 {
  font-size: 2.3em;
  font-family: Libertine C;
  color:#900;
+}
+
+.cx-logo {
+  font-family: Scriptorama;
+  font-size: 6em;
+  line-height: 0.5em;
+}
+
+.white {
+  color: #fff;
+}
+
+.bigger {
+  font-size: 2em;
+}
+
+.cover-text {
+  margin: 112px auto 20px;
+  text-align:center;
+  padding-right:32px;
+  h1 {
+    padding-left:28px;
+  }
+  .bottom {
+    margin-top:200px;
+  }
 }
 
 #slides-nav {
@@ -127,8 +161,9 @@ h1 {
   height: 600px;
   padding:20px;
   font-size:1.5em;
-  background: -moz-linear-gradient(-90deg, #fff, #ccc);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+  background: -moz-linear-gradient(-90deg, #fff, #666);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#666));
+  background: url("/public/img/slide-bg.jpg");
   border-radius:4px;
   box-shadow: 0 0 16px #000;
 
@@ -152,8 +187,10 @@ h1 {
   position:relative;
   margin:68px auto 20px;
   width:880px;
-  padding:20px;
-  background: #fff;
+  padding:20px 20px 60px;
+  background: -moz-linear-gradient(-90deg, #fff, #ccc);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+  background-color:#eee;
   border-radius:4px;
   box-shadow:0 0 4px #000;
 

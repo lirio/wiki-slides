@@ -14,10 +14,10 @@
 </head>
 <body>
 <ul id="main-nav">
-  <li>
+  <li [#if uri?length > 1]class="active"[/#if]>
     <a href="/index.html">Workshop</a>
   </li>
-  <li>
+  <li [#if uri?length <= 1]class="active"[/#if]>
     <a href="/">Slideshow</a>
   </li>
 </ul>

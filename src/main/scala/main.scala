@@ -4,6 +4,8 @@ import ru.circumflex._, core._, web._, freemarker._
 
 class Main extends RequestRouter {
 
+  'uri := uri(0)
+
   get("*/") = Slide.resolve(uri(0) + "index") map { slide =>
     'slide := slide
     ftl("/index.ftl")
