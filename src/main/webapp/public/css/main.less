@@ -46,16 +46,20 @@ a, a:hover, a:visited {
   color:#900;
 }
 
+h1 {
+    margin-bottom: 0.6em;
+}
+
 // Layout
 
 body {
   background:#333;
   font-family: Libertine R;
-  font-size:16pt;
+  font-size:1.3em;
 }
 
 #content {
-  width:960px;
+  width:46.4em;
   margin:0 auto;
   overflow:hidden;
 }
@@ -66,15 +70,14 @@ body {
 
 #main-nav {
   margin:0 auto;
-  width: 260px;
+  width: 13em;
   background: black;
-  padding-right:12px;
-  border-radius:0 0 4px 4px;
-  box-shadow: inset 0 -1px 2px #666;
+  border-radius:0 0 0.1em 0.1em;
+  box-shadow: inset 0 -0.09em 0.1em #666;
 
   li {
     display:inline-block;
-    padding: 8px 0 8px 30px;
+    padding: 0.4em 0 0.4em 1.4em;
     a {
       color:#666;
       text-decoration:none;
@@ -116,26 +119,22 @@ h1 {
 #cover-text {
   margin: 2em 0 1em -2.1em;
   text-align:center;
-  padding:0 32px 0 0;
-  h1 {
-    padding-left:28px;
-  }
   .bottom {
-    margin-top:200px;
+    margin-top:3.5em;
   }
 }
 
 #slides-nav {
-  margin: 24px auto 0;
+  margin: 1em auto 0;
   text-align:center;
-  font-size:24px;
+  font-size:1.2em;
   li {
     display:inline;
-    padding:0 4px;
+    padding: 0 0.1em;
     a {
       text-decoration:none;
       color:#000;
-      text-shadow:0 1px 1px #666;
+      text-shadow:0 0.06em 0.07em #666;
     }
     &.active a {
       color:#700;
@@ -145,7 +144,7 @@ h1 {
 
 #scrollable {
   position:relative;
-  width:960px;
+  width:46.4em;
   overflow:hidden;
 }
 
@@ -156,16 +155,16 @@ h1 {
 
 .slide {
   float:left;
-  width:880px;
-  margin: 20px 20px;
-  height: 600px;
-  padding:30px 80px;
+  width:19.3em;
+  margin: 0.5em;
+  height: 14.3em;
+  padding: 1em 1em 1em 2em;
   font-size:2em;
   background: -moz-linear-gradient(-90deg, #fff, #666);
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#666));
   background-color:#999;
-  border-radius:4px;
-  box-shadow: 0 0 16px #000;
+  border-radius:0.1em;
+  box-shadow: 0 0 0.5em #000;
 
   .loading {
     background:url(/img/loading.gif) center center no-repeat;
@@ -180,24 +179,24 @@ h1 {
 
   h1 {
     font-size: 1.6em;
-    margin-bottom:40px;
   }
 }
 
 .container {
   position:relative;
-  margin:68px auto 20px;
-  width:880px;
-  padding:20px 20px 60px;
+  margin:3.3em auto;
+  width: 41.7em;
+  padding: 1em 1em 1em 2em;
   background: -moz-linear-gradient(-90deg, #fff, #ccc);
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
   background-color:#eee;
-  border-radius:4px;
-  box-shadow:0 0 4px #000;
+  border-radius:0.1em;
+  box-shadow: 0 0 0.5em #000;
+
 
   .slides-refs {
     li {
-      padding: 6px;
+      line-height: 1.5em;
       a {
         color:#666;
         font-size:1.1em;
@@ -206,7 +205,7 @@ h1 {
   }
   .edit-ref {
     position:absolute;
-    bottom:8px;
-    right:8px
+    bottom:0.5em;
+    right:0.5em;
   }
 }
