@@ -24,7 +24,9 @@ ${slide.html}
       var href = $("a", li).attr("href");
       $.get(href, {}, function(data){
         slide.empty();
-        slide.append(data);
+        $('<div class="content-output"/>')
+            .append(data)
+            .appendTo(slide);
       }, "html");
       // add navigation
       var index = li.index() + 1;

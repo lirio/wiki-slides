@@ -1,7 +1,7 @@
 [#ftl]
 
 [#assign content]
-<div class="container">
+<div class="slide">
   <h1>${(slide.title)!}</h1>
   <form method="post" action="${uri}">
     <dl>
