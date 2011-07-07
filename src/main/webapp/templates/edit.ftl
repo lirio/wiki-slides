@@ -2,7 +2,7 @@
 
 [#assign content]
 <div class="container">
-  <h1>${(slide.title)!""}</h1>
+  <h1>${(slide.title)!}</h1>
   <form method="post" action="${uri}">
     <dl>
       <dd>
