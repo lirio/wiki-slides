@@ -1,5 +1,13 @@
 @import url(fonts.css);
 
+// 16:9
+//@width:53em;
+// 16:10
+//@width:48em;
+// 4:3
+@width:40em;
+@slide-width:@width - 2em;
+
 // Reset
 
 html, body, div, span, applet, object, iframe,
@@ -63,7 +71,7 @@ body {
 }
 
 #content {
-  width:46em;
+  width:@width;
   margin:0 auto;
   overflow:hidden;
 }
@@ -130,9 +138,9 @@ body {
 .slide {
   position:relative;
   float:left;
-  width:45em;
+  width:@slide-width;
   height:26em;
-  margin:0.5em;
+  margin:.5em 1em;
   background: -moz-linear-gradient(-90deg, #fff, #666);
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#666));
   background-color:#999;
@@ -141,33 +149,38 @@ body {
   .loading, .not-found {
     background:url(/img/loading.gif) center center no-repeat;
   }
-}
-
-// TODO scheduled for deletion
-.container {
-  margin:3.3em auto;
-  width: 41.7em;
-  padding: 1em;
-  background: -moz-linear-gradient(-90deg, #fff, #ccc);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
-  background-color:#eee;
-  border-radius:0.1em;
-  box-shadow: 0 0 0.5em #000;
-  .slides-refs {
-    li {
-      line-height: 1.5em;
-      a {
-        color:#666;
-        font-size:1.1em;
-      }
+  a {
+    text-decoration:none;
+    color:#333;
+    padding-bottom:.1em;
+    border-bottom: 1px solid #900;
+    &:hover {
+      text-decoration:none;
     }
   }
   .edit-ref {
     position:absolute;
-    bottom:0.5em;
-    right:0.5em;
+    bottom:1em;
+    right: 1em;
+  }
+  strong {
+    font-family: Libertine_Bd;
+  }
+  em {
+    font-family: Libertine_It;
+  }
+  .code {
+    line-height:1em;
+    background: #fff;
+    border-radius: 8px;
+    padding: .5em;
+    border: 1px solid #999;
+    font-family: Courier;
+    font-size: .8em;
   }
 }
+
+// TODO scheduled for deletion
 
 .content-output {
   padding:2em 3em;

@@ -12,3 +12,15 @@
 	font-family:'Scriptorama';
 	src:url(../fonts/Scriptorama.ttf) format('truetype');
 	}
+
+@font-face {
+	font-family:'Libertine_Bd';
+	src:url(../fonts/LinLibertine_Bd-4.1.5.otf) format('opentype');
+  src:url(../fonts/LinLibertine_Bd-4.1.5.ttf) format('truetype');
+	}
+
+@font-face {
+	font-family:'Libertine_It';
+	src:url(../fonts/LinLibertine_It-4.2.6.otf) format('opentype');
+  src:url(../fonts/LinLibertine_It-4.2.6.ttf) format('truetype');
+	}
